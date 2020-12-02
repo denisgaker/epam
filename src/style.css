@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./fira-sans.woff') format('woff'),
+         url('./fira-sans.eot?#iefix') format('embedded-opentype'),
+         url('./fira-sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hello {
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'MyFont';
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: bold;
+    color: #4773a2;
+    /* background: url('./icon.png') center right / 40px 40px no-repeat; */
+}
+
+img {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 30px auto;
+    padding: 0;
+}
