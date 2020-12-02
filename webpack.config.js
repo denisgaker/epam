@@ -1,12 +1,25 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    // entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        print: './src/print.js'
+    },
+    plugins: [
+        new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            title: 'Output Management'
+        })
+    ],
     output: {
-        filename: 'bundle.js',
+        // filename: 'bundle.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
-    module: {
+    /* module: {
         rules: [
             {
                 test: /\.css$/i,
@@ -19,7 +32,15 @@ module.exports = {
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource'
+            },
+            {
+                test: /\.(csv|tsv)$/i,
+                use: ['csv-loader']
+            },
+            {
+                test: /\.xml$/i,
+                use: ['xml-loader']
             }
         ]
-    }
+    } */
 };
