@@ -5,6 +5,10 @@ import Data from './data.xml';
 import Notes from './data.csv';
 import printMe from './print.js';
 
+if (process.env.NODE_ENV !== 'production') {
+    console.log('Development mode!');
+}
+
 function component() {
     const element = document.createElement('div');
     const btn = document.createElement('button');
@@ -16,9 +20,6 @@ function component() {
     myIcon.src = Icon;
 
     element.appendChild(myIcon);
-
-    // console.log(Data);
-    // console.log(Notes);
 
     btn.innerHTML = 'Click me and check what you did!';
     btn.onclick = printMe;
