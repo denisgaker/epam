@@ -7,7 +7,9 @@
     "test": "jest",
     "watch": "webpack --watch",
     "start": "webpack serve",
-    "build": "webpack"
+    "build": "webpack",
+    "prod": "webpack --env NODE_ENV=local --env production --progress",
+    "dev": "webpack serve --env NODE_ENV=development --env development --progress"
   },
   "repository": {
     "type": "git",
