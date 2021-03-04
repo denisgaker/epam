@@ -1,31 +1,25 @@
 import _ from 'lodash';
 import './style.css';
-import Icon from './icon.png';
-import Data from './data.xml';
-import Notes from './data.csv';
-import printMe from './print.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.jsx';
+
 
 if (process.env.NODE_ENV !== 'production') {
-    console.log('Development mode!');
+    console.log('Development mode!');  
 }
 
-function component() {
-    const element = document.createElement('div');
-    const btn = document.createElement('button');
+const myContainer = document.createElement('section');
+myContainer.id = 'sct';
+document.body.appendChild(myContainer);
 
-    element.innerHTML = _.join(['Hello,', 'webpack!', 'My', 'name', 'is', 'Denis '], ' ');
-    element.classList.add('hello');
+{/* const app = React.createElement("main", null, App()); 
 
-    const myIcon = new Image();
-    myIcon.src = Icon;
+ReactDOM.render(app, document.getElementById('sct')); */}
 
-    element.appendChild(myIcon);
-
-    btn.innerHTML = 'Click me and check what you did!';
-    btn.onclick = printMe;
-    element.appendChild(btn);
-
-    return element;
-}
-
-document.body.appendChild(component());
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    myContainer
+)
