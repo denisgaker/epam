@@ -7,11 +7,11 @@ import Footer        from './footer/Footer.jsx'
 import SocLinks      from './footer/SocLinks.jsx'
 import Copyright     from './footer/Copyright.jsx'
 import ErrorBoundary from './ErrorBoundary.jsx'
-import WithHeaderError   from './WithHeaderError.jsx'
+import HeaderError   from './HeaderError.jsx'
 import DataAll       from './data.json5'
 
 
-const HeaderWithHeaderError = WithHeaderError(Header)
+const WithHeaderError = HeaderError(Header)
 const NameApp               = DataAll.globalData.nameApp
 const SearchCTA             = DataAll.globalData.searchCTA
 const SearchPlaceholder     = DataAll.globalData.searchPlaceholder
@@ -20,14 +20,14 @@ const SearchBtnText         = DataAll.globalData.searchBtnText
 export default function App() {
     return (
         <>
-            <HeaderWithHeaderError isHeaderError = { false } >
+            <WithHeaderError isError = { false } >
                 <Heading nameApp = { NameApp } />
                 <Search
                     searchCTA         = { SearchCTA }
                     searchPlaceholder = { SearchPlaceholder }
                     searchBtnText     = { SearchBtnText }
                  />
-            </HeaderWithHeaderError>
+            </WithHeaderError>
             <ErrorBoundary>
                 <MovieList/>
             </ErrorBoundary>
