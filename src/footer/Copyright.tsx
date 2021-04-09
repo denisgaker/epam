@@ -1,6 +1,6 @@
-import React from 'react'
+import * as React from 'react'
 
-export default function Copyright({name}) {
+export default function Copyright({name}: any) {
     const date = new Date().getFullYear()
     const text = ' | All right reserved'
     return (
