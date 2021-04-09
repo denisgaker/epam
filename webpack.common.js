@@ -1,34 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-/* const ExtractTextPlugin = require('extract-text-webpack-plugin'); */
 
 module.exports = {
     entry: {
-        index: './src/index.js'
-        // print: './src/print.js'
+        index: './src/index.ts'
     },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'app',
         }),
-        /* new ExtractTextPlugin('style.css') */
-        /* new HtmlWebpackPlugin({
-            inject: false,
-            templateContent: ({htmlWebpackPlugin}) => `
-              <html>
-                <head>
-                  <title>App</title>
-                  ${htmlWebpackPlugin.tags.headTags}
-                </head>
-                <body>
-                  <section id="sct"></section>
-                  ${htmlWebpackPlugin.tags.bodyTags}
-                </body>
-              </html>
-            `
-          }) */
     ],
     output: {
       filename: '[name].bundle.js',
@@ -82,26 +64,6 @@ module.exports = {
                     'sass-loader'
                 ]
             },
-            /* {
-                test: /\.less$/,
-                // loader: 'less-loader'
-                use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader'
-                    },
-                    {
-                        loader: 'less-loader',
-                        options: {
-                            lessOptions: {
-                                strictMath: true
-                            }
-                        }
-                    }
-                ]
-            } */
         ]
     },
     resolve: {

@@ -1,4 +1,4 @@
-import React         from 'react'
+import  * as React         from 'react'
 import Header        from './header/Header.jsx'
 import Heading       from './header/Heading.jsx'
 import Search        from './header/Search.jsx'
