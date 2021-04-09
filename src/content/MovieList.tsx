@@ -1,7 +1,7 @@
 import * as React from 'react'
 import MovieCard from './MovieCard'
 import AllData from '../data.json5'
-import ImageHelper from './ImageHelper.js'
+import ImageHelper from './ImageHelper'
 import Interstellar from './img/interstellar.jpg'
 import RikAndMorti from './img/rikAndMorti.jpg'
 import StrangerThings from './img/strangerThings.jpg'

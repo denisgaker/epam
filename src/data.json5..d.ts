@@ -5,6 +5,9 @@ declare module "*.json5" {
         },
         movies: {
             [key: string]: any
+        },
+        socialNetworkLinks: {
+            [key: string]: any
         }
     }
     export default value
