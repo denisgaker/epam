@@ -1,6 +1,6 @@
-import React from 'react'
+import * as React from 'react'
 
-export default function Search({searchCTA, searchPlaceholder, searchBtnText}) {
+export default function Search({searchCTA, searchPlaceholder, searchBtnText}: any) {
     return (
         <div className="search">
             <h2>{searchCTA}</h2>
