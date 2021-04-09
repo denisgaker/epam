@@ -1,7 +1,7 @@
-import React from 'react'
+import * as React from 'react'
 import './style.scss' 
 
-export default function MovieCard({title, description, year, genre}) {
+export default function MovieCard({title, description, year, genre}: any) {
     return (
         <>
             <h3>{title}</h3>
