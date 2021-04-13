@@ -1,7 +1,15 @@
 import * as React from 'react'
 import './style.scss' 
 
-export default function MovieCard({title, description, year, genre}: any) {
+interface MovieCardProps {
+    title: string
+    description: string
+    year: number
+    genre: string
+}
+
+//! Попоробовать через ReactFC
+export default function MovieCard({title, description, year, genre}: MovieCardProps) {
     return (
         <>
             <h3>{title}</h3>

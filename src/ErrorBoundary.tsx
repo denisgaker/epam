@@ -2,7 +2,9 @@ import { any } from 'prop-types';
 import * as React from 'react'
 import './style.css'
 
-class ErrorBoundary extends React.Component<{}, {error: any, errorInfo: any} > {
+//! Погуглить typescript type ErrorBoundary
+
+class ErrorBoundary extends React.Component<{/* children: React.ReactNode */}, {error: any, errorInfo: any} > {
     constructor(props: any) {
         super(props);
         this.state = { error: null, errorInfo: null };

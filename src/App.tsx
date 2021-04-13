@@ -8,14 +8,14 @@ import SocLinks      from './footer/SocLinks'
 import Copyright     from './footer/Copyright'
 import ErrorBoundary from './ErrorBoundary'
 import HeaderError   from './HeaderError'
-import DataAll       from './data.json5'
+// import DataAll       from './data.json5'
+import {Datats}      from './Datats'
 
-
-const WithHeaderError = HeaderError(Header)
-const NameApp               = DataAll.globalData.nameApp
-const SearchCTA             = DataAll.globalData.searchCTA
-const SearchPlaceholder     = DataAll.globalData.searchPlaceholder
-const SearchBtnText         = DataAll.globalData.searchBtnText
+const WithHeaderError       = HeaderError(Header)
+const NameApp               = Datats.globalData.nameApp
+const SearchCTA             = Datats.globalData.searchCTA
+const SearchPlaceholder     = Datats.globalData.searchPlaceholder
+const SearchBtnText         = Datats.globalData.searchBtnText
 
 export default function App() {
     return (

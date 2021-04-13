@@ -1,13 +1,14 @@
 import * as React from 'react'
 import MovieCard from './MovieCard'
 import AllData from '../data.json5'
+import {Datats} from '../Datats'
 import ImageHelper from './ImageHelper'
 import Interstellar from './img/interstellar.jpg'
 import RikAndMorti from './img/rikAndMorti.jpg'
 import StrangerThings from './img/strangerThings.jpg'
 
 
-const MovieData = AllData.movies
+const MovieData = Datats.movies
 MovieData[0].image = RikAndMorti
 MovieData[1].image = StrangerThings
 MovieData[2].image = Interstellar
@@ -22,7 +23,7 @@ class MovieList extends React.Component {
         }
         return (
             <>
-                {MovieData.map((movie: any) => (
+                {MovieData.map((movie) => (
                     <div className="MovieCard">
                         <ImageHelper imagePath={movie.image} />
                         <MovieCard
