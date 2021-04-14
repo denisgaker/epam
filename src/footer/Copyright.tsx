@@ -1,8 +1,6 @@
 import * as React from 'react'
+import { CopyrightProps } from './interfaces'
 
-interface CopyrightProps {
-    name: string
-}
 
 const Copyright: React.FC<CopyrightProps> = ({name}) => {
     const date: number = new Date().getFullYear()

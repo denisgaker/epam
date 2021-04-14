@@ -1,10 +1,5 @@
 import * as React from 'react'
-
-interface SaerchProps {
-    searchCTA: string
-    searchPlaceholder: string
-    searchBtnText: string
-}
+import { SaerchProps } from './interfaces'
 
 const Search: React.FC<SaerchProps> = ({searchCTA, searchPlaceholder, searchBtnText}) => {
     return (

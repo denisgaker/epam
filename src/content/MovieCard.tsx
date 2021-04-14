@@ -1,12 +1,6 @@
 import * as React from 'react'
 import './style.scss' 
-
-interface MovieCardProps {
-    title: string
-    description: string
-    year: number
-    genre: string
-}
+import { MovieCardProps } from './interfaces'
 
 const MovieCard: React.FC<MovieCardProps> = ({title, description, year, genre}) => {
     return (
