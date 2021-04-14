@@ -1,14 +1,12 @@
 import * as React from 'react'
-import AllData from '../data.json5'
-{/* import './style.css' */}
-{/* import './style.scss' */}
+import {Datats} from '../Datats'
 
-const FooterData = AllData.socialNetworkLinks
+const FooterData = Datats.socialNetworkLinks
 
 export default function SocLinks() {
     return (
         <div className="soc">
-            {FooterData.map((fd: any) => (
+            {FooterData.map((fd) => (
                 <a href={fd.link}
                    target={fd.target}
                    title={fd.desc}
