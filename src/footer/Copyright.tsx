@@ -1,8 +1,8 @@
 import * as React from 'react'
 
-export default function Copyright({name}: any) {
-    const date = new Date().getFullYear()
-    const text = ' | All right reserved'
+export default function Copyright(name: string) {
+    const date: number = new Date().getFullYear()
+    const text: string = ' | All right reserved'
     return (
         <p>
             &#169; {` ${date} ${name} ${text}`}
