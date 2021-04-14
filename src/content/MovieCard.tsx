@@ -8,8 +8,7 @@ interface MovieCardProps {
     genre: string
 }
 
-//! Попоробовать через ReactFC
-export default function MovieCard({title, description, year, genre}: MovieCardProps) {
+const MovieCard: React.FC<MovieCardProps> = ({title, description, year, genre}) => {
     return (
         <>
             <h3>{title}</h3>
@@ -24,3 +23,5 @@ MovieCard.defaultProps = {
     title: 'Just a Perfect Movie',
     description: 'Cool description'
 }
+
+export default MovieCard;
