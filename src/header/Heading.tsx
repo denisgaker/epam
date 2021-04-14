@@ -1,5 +1,5 @@
 import * as React from 'react'
 
-export default function Heading({nameApp}: any) {
+export default function Heading(nameApp: string) {
     return <h1>{`${nameApp}`}</h1>
 }
