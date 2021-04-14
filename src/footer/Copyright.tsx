@@ -4,7 +4,7 @@ interface CopyrightProps {
     name: string
 }
 
-const Copyright: React.FC<CopyrightProps> = (name) => {
+const Copyright: React.FC<CopyrightProps> = ({name}) => {
     const date: number = new Date().getFullYear()
     const text: string = ' | All right reserved'
     return (
