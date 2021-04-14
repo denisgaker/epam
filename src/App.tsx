@@ -21,7 +21,7 @@ export default function App() {
     return (
         <>
             <WithHeaderError isError = { false } >
-                <Heading nameApp = { NameApp } />
+                <Heading name = { NameApp } />
                 <Search
                     searchCTA         = { SearchCTA }
                     searchPlaceholder = { SearchPlaceholder }

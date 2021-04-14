@@ -1,6 +1,12 @@
 import * as React from 'react'
 
-export default function Search({searchCTA, searchPlaceholder, searchBtnText}: any) {
+interface SaerchProps {
+    searchCTA: string
+    searchPlaceholder: string
+    searchBtnText: string
+}
+
+const Search: React.FC<SaerchProps> = ({searchCTA, searchPlaceholder, searchBtnText}) => {
     return (
         <div className="search">
             <h2>{searchCTA}</h2>
@@ -22,3 +28,5 @@ export default function Search({searchCTA, searchPlaceholder, searchBtnText}: an
         </div>
     )
 }
+
+export default Search

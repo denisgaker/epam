@@ -1,6 +1,10 @@
 import * as React from 'react'
 
-export default function Copyright(name: string) {
+interface CopyrightProps {
+    name: string
+}
+
+const Copyright: React.FC<CopyrightProps> = (name) => {
     const date: number = new Date().getFullYear()
     const text: string = ' | All right reserved'
     return (
@@ -9,3 +13,5 @@ export default function Copyright(name: string) {
         </p>
     )
 }
+
+export default Copyright

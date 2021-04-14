@@ -1,5 +1,11 @@
 import * as React from 'react'
 
-export default function Heading(nameApp: string) {
-    return <h1>{`${nameApp}`}</h1>
+interface HeadingProps {
+    name: string
 }
+
+const Heading: React.FC<HeadingProps> = ({name}) => {
+    return <h1>{`${name}`}</h1>
+}
+
+export default Heading
