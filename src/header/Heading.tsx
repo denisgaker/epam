@@ -1,8 +1,8 @@
-import * as React from 'react'
-import {HeadingProps} from './interfaces'
+import * as React from 'react';
+import { HeadingProps } from './interfaces';
 
-const Heading: React.FC<HeadingProps> = ({name}) => {
-    return <h1>{`${name}`}</h1>
-}
+const Heading: React.FC<HeadingProps> = ({ name }: HeadingProps) => {
+  return <h1>{`${name}`}</h1>;
+};
 
-export default Heading
+export default Heading;

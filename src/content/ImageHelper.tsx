@@ -1,6 +1,5 @@
-import * as React from 'react'
+import * as React from 'react';
 
-export default function ImageHelper({imagePath}: any) {
-    return <img src={imagePath} />
-    
+export default function ImageHelper({ imagePath }) {
+  return <img src={imagePath} />;
 }
