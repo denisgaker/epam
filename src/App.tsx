@@ -8,17 +8,15 @@ import SocLinks from './footer/SocLinks';
 import Copyright from './footer/Copyright';
 import ErrorBoundary from './ErrorBoundary';
 import HeaderError from './HeaderError';
-// import DataAll from './data.json5'
 import { Datats } from './Datats';
 
-// eslint-disable-next-line new-cap
 const WithHeaderError = HeaderError(Header);
 const NameApp = Datats.globalData.nameApp;
 const SearchCTA = Datats.globalData.searchCTA;
 const SearchPlaceholder = Datats.globalData.searchPlaceholder;
 const SearchBtnText = Datats.globalData.searchBtnText;
 
-export default function      App() {
+const App = (): React.ReactElement => {
   return (
     <>
       <WithHeaderError isError={false}>
@@ -38,4 +36,6 @@ export default function      App() {
       </Footer>
     </>
   );
-}
+};
+
+export default App;

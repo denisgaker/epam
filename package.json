@@ -12,6 +12,10 @@
     "eslint": "eslint",
     "prettier": "prettier"
   },
+  "prettier": {
+    "singleQuote": true,
+    "prentWidth": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/denisgaker/epam.git"
