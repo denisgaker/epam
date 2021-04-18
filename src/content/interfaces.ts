@@ -4,3 +4,7 @@ export interface MovieCardProps {
   year: number;
   genre: string;
 }
+
+export interface ImagePathType {
+  imagePath: string;
+}

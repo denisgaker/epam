@@ -18,7 +18,7 @@ const SearchCTA = Datats.globalData.searchCTA;
 const SearchPlaceholder = Datats.globalData.searchPlaceholder;
 const SearchBtnText = Datats.globalData.searchBtnText;
 
-export default function App(): React.ReactFragment {
+export default function      App() {
   return (
     <>
       <WithHeaderError isError={false}>

@@ -1,7 +1,9 @@
+import * as React from 'react';
+
 export interface CopyrightProps {
   name: string;
 }
 
 export interface FooterInner {
-  children: number | string;
+  children: Element | React.ReactNode;
 }
