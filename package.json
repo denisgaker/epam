@@ -8,11 +8,9 @@
     "watch": "webpack --watch",
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "lint": "eslint --ext .ts, .tsx --fix"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "printWidth": 100
+    "lint": "eslint --ext .ts, .tsx --fix",
+    "eslint": "eslint",
+    "prettier": "prettier"
   },
   "repository": {
     "type": "git",

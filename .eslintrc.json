@@ -7,12 +7,13 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "es2017": true
+        "es2017": true,
+        "es6": true
     },
     "extends": [
         "plugin:@typescript-eslint/recommended",
         "plugin:react-hooks/recommended",
-        "eslint:recommended",
+        "plugin:eslint/recommended",
         "plugin:react/recommended",
         "plugin:import/errors",
         "plugin:import/warnings",
@@ -36,6 +37,13 @@
     "rules": {
         "require-jsdoc": "off",
         "@typescript-eslint/ban-ts-comment": "off",
-        "@typescript-eslint/ban-types": "off"
+        "@typescript-eslint/ban-types": "off",
+        "no-var": "error",
+        "semi": "error",
+        "indent": "error",
+        "no-multi-spaces": "error",
+        "space-in-parens": "error",
+        "prefer-const": "error",
+        "no-use-before-define": "error"
     }
 }
