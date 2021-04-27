@@ -37,6 +37,7 @@
         "require-jsdoc": "off",
         "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/ban-types": "off",
-        "new-cap": "off"
+        "react/display-name": ["off", {"ignoreTranspilerName": false}],
+        "prettier/prettier": ["warning", {"singleQuote": true, "parser": "flow"}]
     }
 }
