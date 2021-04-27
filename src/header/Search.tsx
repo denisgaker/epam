@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { SaerchProps } from './interfaces';
+import { SearchProps } from './interfaces';
 
-const Search: React.FC<SaerchProps> = ({
+const Search: React.FC<SearchProps> = ({
   searchCTA,
   searchPlaceholder,
   searchBtnText,
-}: SaerchProps) => {
+}: SearchProps) => {
   return (
     <div className="search">
       <h2>{searchCTA}</h2>

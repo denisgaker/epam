@@ -2,7 +2,7 @@ export interface HeadingProps {
   name: string;
 }
 
-export interface SaerchProps {
+export interface SearchProps {
   searchCTA: string;
   searchPlaceholder: string;
   searchBtnText: string;
