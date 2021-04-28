@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { FooterInner } from './interfaces';
+import { FooterInner } from './Footer.interfaces';
 import './style.scss';
 
 const Footer: React.FC<FooterInner> = (props: FooterInner) => (

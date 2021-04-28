@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SearchProps } from './interfaces';
+import { SearchProps } from './Search.interfaces';
 
 const Search: React.FC<SearchProps> = ({
   searchCTA,

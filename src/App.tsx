@@ -1,14 +1,14 @@
 import * as React from 'react';
-import Header from './header/Header';
-import Heading from './header/Heading';
-import Search from './header/Search';
+import Header from './header/header/Header';
+import Heading from './header/header/Heading';
+import Search from './header/search/Search';
 import MovieList from './content/MovieList';
-import Footer from './footer/Footer';
+import Footer from './footer/footer/Footer';
 import SocLinks from './footer/SocLinks';
-import Copyright from './footer/Copyright';
+import Copyright from './footer/copyright/Copyright';
 import ErrorBoundary from './ErrorBoundary';
 // import HeaderError from './HeaderError';
-import withError from './HeaderError';
+import withError from './headererror/HeaderError';
 import { Datats } from './Datats';
 
 // const WithHeaderError = HeaderError(Header);

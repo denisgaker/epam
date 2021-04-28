@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { HeaderInner } from './interfaces';
+import { HeaderInner } from './Header.interface';
 import './style.scss';
 
 const Header: React.FC<HeaderInner> = (props: HeaderInner) => (

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ImagePathType } from './interfaces';
+import { ImagePathType } from './ImageHelper.interface';
 
 const ImageHelper = ({ imagePath }: ImagePathType) => {
   return <img src={imagePath} />;
