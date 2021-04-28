@@ -1,21 +1,5 @@
 import { string } from "prop-types"
 
-
-
-/* enum IDatats {
-    globalData = 'globalData'
-} */
-
-// const ID = IDatats.globalData
-
-/* type IDatatsType = {
-    []: string[]
-} */
-
-/* type IDatatsType1<IDatats> = {
-    [key in globalData]: string[]
-} */
-
 type GlobalDataType = {
     [key in GlobalDataKey]: string
 }
@@ -46,11 +30,6 @@ enum SocialNetworkLinksKey {
     key = 'key'
 }
 
-
-/* type MoviesType = {
-    [key in MoviesKey]: string
-} & {year: number} */
-
 interface MOviesTypeStrings {
     title : string
     description : string
@@ -67,7 +46,6 @@ interface MoviesType extends Omit<MOviesTypeStrings, 'sumField'> {
 enum MoviesKey {
     title = 'title',
     description = 'description',
-    // year = 'year',
     genre = 'genre',
     image = 'image',
     id = 'id'
