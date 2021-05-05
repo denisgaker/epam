@@ -1,5 +1,6 @@
+import { ReactNode } from "react";
+
 export interface HeaderErrorProps {
   isError: boolean;
-  props: string;
-  children: number | string;
+  children: ReactNode;
 }
