@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './style.scss';
+import '../style.scss';
 import { MovieCardProps } from './MovieCard.interfaces';
 
 const MovieCard: React.FC<MovieCardProps> = ({

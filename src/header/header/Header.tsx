@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './style.scss';
+import '../style.scss';
 
 const Header: React.FC<{}> = (props) => (
   <header className="header">{props.children}</header>
